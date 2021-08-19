@@ -20,7 +20,7 @@ function Secondary({ inputCity, findCity, clearInput, submitCity, secondary, dat
 				</div>
 			</div>
 			<div className="cards">
-				{secondary.map((obj, index) => <Card obj={obj} key={`${obj.title}_${index}`} />)}
+				{secondary && secondary.map((obj, index) => <Card obj={obj} key={`${obj.title}_${index}`} />)}
 			</div>
 		</div>
 	);

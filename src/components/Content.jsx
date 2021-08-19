@@ -56,7 +56,7 @@ function Content() {
 
 				//Перевод градусов в направление ветра
 				const changeDirection = (deg) => {
-					const directions = ['north', 'northeast', 'east', 'southeast', 'south', 'southwest', 'west', 'northwest'];
+					const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
 					const degrees = Math.round(deg * 8 / 360);
 					return directions[degrees];
 				}
